@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ES-es">
+
+<head>
+    <title>
+        Formuario
+    </title>
+    <meta charset="utf-8">
+    <link href="logo.png" rel="icon" type="image/png">
+    <link href="color.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h2>Entrevista trabajo</h2>
+    <table class="default">
+<section>
+    <h2>Información de pago</h2>
+    <p>
+      <label for="card">
+        <span>Tipo de tarjeta:</span>
+      </label>
+      <select id="card" name="usercard">
+        <option value="visa">Visa</option>
+        <option value="mc">Mastercard</option>
+        <option value="amex">American Express</option>
+      </select>
+    </p>
+    <p>
+      <label for="number">
+        <span>Número de tarjeta:</span>
+        <strong><abbr title="required">*</abbr></strong>
+      </label>
+      <input type="tel" id="number" name="cardnumber">
+    </p>
+    <p>
+      <label for="date">
+        <span>Fecha de caducidad:</span>
+        <strong><abbr title="required">*</abbr></strong>
+        <em>el formato mm/aa</em>
+      </label>
+      <input type="date" id="date" name="expiration">
+    </p>
+</section>
+
+        <p> <button type="submit">Enviar</button> </p>   
+</body>
+
+</html>
