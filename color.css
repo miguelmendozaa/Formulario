@@ -1,35 +1,10 @@
 body {
-    background-color: rgb(128, 0, 96);
+    background-color: rgb(59, 118, 133);
     padding-left: 5em;
     font-family: Georgia, "Times New Roman",
         Times, serif;
     color: black;
     font-size: 14;
-}
-table {
-    width: 100%;
-    text-align: center;
-}
-
-dt {
-    font-weight: bold;
-    text-decoration: underline;
-    color: black;
-}
-
-dd {
-    margin: 0;
-    padding: 0 0 0.5em 0;
-}
-
-div.container {
-    text-align: center;
-}
-
-
-p1 { 
-	width: 800px; margin: 0 auto; 
-	display:block;
 }
 
 h1 {
@@ -40,17 +15,9 @@ h1 {
 }
 
 h2 {
-    #color: rgb(128, 0, 96);
-	color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
     font-size: 15;
     text-align: center;
-}
-
-h3 {
-    color: rgb(118, 68, 138);
-    font-size: 15;
-    text-align: center;
-    text-decoration: underline;
 }
 
 h1:link {
