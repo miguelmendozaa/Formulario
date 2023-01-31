@@ -11,6 +11,7 @@
 </head>
 
 <body>
+  <form action="ejemplo.php" method="get">
     <h2>Entrevista trabajo</h2>
     <table class="default">
 <section>
@@ -18,15 +19,19 @@
     <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su nombre">
     <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su apellido">
     <input class="controls" type="text" name="email" id="email" placeholder="Ingrese su email">
-    <h2>Información de pago</h2>
-    <p>
+    <p>Año de nacimiento: <input type="number" name="nacido" min="1900"></p>  
+    <p>Sexo:
+        <input type="radio" name="hm" value="h"> Hombre
+        <input type="radio" name="hm" value="m"> Mujer
+      </p>
+      <p>
       <label for="card">
-        <span>¿Cuanto esperas cobrar?</span>
+        <h2>¿Cuanto esperas cobrar?</h2>
       </label>
       <select id="card" name="usercard">
         <option value="visa">1000€-1500€</option>
-        <option value="mc">1000€-1500€</option>
-        <option value="amex">1000€-1500€</option>
+        <option value="mc">1500€-2000€</option>
+        <option value="amex">2000€-2500€</option>
       </select>
     </p>
     <p>
@@ -45,15 +50,11 @@
       <input type="date" id="date" name="expiration">
     </p>
 </section>
-
-<td>
-  <button>
-      Enviar
-      <br>
-      <br>
-</button>
-</td>           
-<p> <button type="submit">Enviar</button> </p>   
+<p>
+  <input type="submit" value="Enviar">
+  <input type="reset" value="Borrar">
+</p>
+</form> 
 </body>
 
 </html>
