@@ -25,6 +25,7 @@
         <span>Localidad</span>
       </label>
       <select id="card" name="usercard">
+        <option value="">--</option>
         <option value="AC">A Coruña</option>
         <option value="AL">Alava</option>
         <option value="AB">Albacete</option>
@@ -81,6 +82,11 @@
         <option value="Zm">Zamora</option>
         <option value="Zr">Zaragoza</option>
       </select>
+      <label for="number">
+        <span>Domicilio:</span>
+        <strong><abbr title="required">*</abbr></strong>
+      </label>
+      <input type="text" id="casa" name="domicilio">
     </p>
     <p>Sexo:
         <input type="radio" name="hm" value="h"> Hombre
@@ -90,10 +96,11 @@
       <span>DNI:</span>
     <input class="controls" type="text" name="dni" id="dni" placeholder="Ingrese su DNI">
       <p>
-      <label for="card">
+      <label for="salario">
         <span>¿Cuanto esperas cobrar?</span>
       </label>
-      <select id="card" name="usercard">
+      <select id="salario" name="usersalary">
+        <option value="">--</option>
         <option value="poco">1000€-1500€</option>
         <option value="medio">1500€-2000€</option>
         <option value="mucho">2000€-2500€</option>
@@ -104,7 +111,7 @@
         <span>¿Por qué quieres trabajar aquí?</span>
         <strong><abbr title="required">*</abbr></strong>
       </label>
-      <input type="tel" id="number" name="cardnumber">
+      <input type="tel" id="motivos" name="motivoss">
     </p>
     <p>
       <label for="date">
@@ -116,10 +123,10 @@
     </p>
     <p>
       <label for="number">
-        <span>¿Por qué quieres trabajar aquí?</span>
+        <span>Domicilio:</span>
         <strong><abbr title="required">*</abbr></strong>
       </label>
-      <input type="tel" id="number" name="cardnumber">
+      <input type="text" id="casa" name="domicilio">
     </p>
 </section>
 <p>
