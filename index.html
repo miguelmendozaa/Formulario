@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <form action="ejemplo.php" method="get">
+  <form action="envioOk.html" method="get">
     <h2>Entrevista trabajo</h2>
     <table class="default">
 <section>
@@ -19,7 +19,7 @@
     <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su nombre">
     <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su apellido">
     <input class="controls" type="text" name="email" id="email" placeholder="Ingrese su email">
-    <p>Año de nacimiento: <input type="number" name="nacido" min="1900"></p>  
+    <p>Año de nacimiento: <input type="number" name="nacido" min="1930"></p>  
     <p>
       <label for="card">
         <span>Localidad</span>
@@ -86,12 +86,12 @@
         <span>Domicilio:</span>
         <strong><abbr title="required">*</abbr></strong>
       </label>
-      <input type="text" id="casa" name="domicilio">
+      <input type="text" id="casa" name="domicilio" required="required">
     </p>
     <p>Sexo:
         <input type="radio" name="hm" value="h"> Hombre
         <input type="radio" name="hm" value="m"> Mujer
-        <input type="radio" name="ot" value="o"> Otros
+        <input type="radio" name="hm" value="o"> Otros
       </p>
       <span>DNI:</span>
     <input class="controls" type="text" name="dni" id="dni" placeholder="Ingrese su DNI">
@@ -111,21 +111,46 @@
         <span>¿Por qué quieres trabajar aquí?</span>
         <strong><abbr title="required" required="required">*</abbr></strong>
       </label>
-      <textarea id="content" name="motivos" cols="60" rows="5"></textarea>
+      <textarea id="content" name="motivos" cols="60" rows="5" required="required"></textarea>
     </p>
     <p>
       <label for="date">
         <span>¿Cuando desearias empezar?</span>
         <strong><abbr title="required">*</abbr></strong>
-        <em>el formato mm/aa</em>
       </label>
       <input type="date" id="date" name="expiration">
     </p>
+    <p>
+        <legend>Dias de la semana que quieres trabajar</legend>
+        <div>
+            <input type="checkbox" id="lunes" name="semana" value="L" />
+            <label for="lunes">Lunes</label>
+        
+            <input type="checkbox" id="martes" name="semana" value="M" />
+            <label for="martes">Martes</label>
+            
+            <input type="checkbox" id="miercoles" name="semana" value="X" />
+            <label for="miercoles">Miercoles</label>
+            
+            <input type="checkbox" id="jueves" name="semana" value="J" />
+            <label for="jueves">Jueves</label>
+            
+            <input type="checkbox" id="viernes" name="semana" value="V" />
+            <label for="viernes">Viernes</label>
+            
+            <input type="checkbox" id="sabado" name="semana" value="S" />
+            <label for="sabado">Sábado</label>
+            
+            <input type="checkbox" id="domingo" name="semana" value="D" />
+            <label for="domingo">Domingo</label>
+        </div>
+    </p>
 </section>
 <p>
-  <input type="submit" value="Enviar">
+  <input type="submit" value="Enviar" />
   <input type="reset" value="Borrar">
 </p>
+
 </form> 
 </body>
 

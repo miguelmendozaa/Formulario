@@ -40,6 +40,42 @@ h1:active {
     text-decoration: none;
 }
 
-button {
-    background-color:blueviolet
+input[type=submit]:hover {
+    /* color: rgb(111, 168, 5);
+    text-decoration: none; */
+    background: greenyellow;
+}
+
+input[type=submit]:active {
+    color: rgb(209, 9, 9);
+    text-decoration: none;
+}
+
+
+input[type=submit] {
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+input[type=reset]:hover {
+    /* color: rgb(111, 168, 5);
+    text-decoration: none; */
+    background: blue;
+}
+
+input[type=reset]:active {
+    color: rgb(209, 9, 9);
+    text-decoration: none;
+}
+input[type=reset] {
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
 }
