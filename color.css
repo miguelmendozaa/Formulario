@@ -64,7 +64,7 @@ input[type=submit] {
 input[type=reset]:hover {
     /* color: rgb(111, 168, 5);
     text-decoration: none; */
-    background: blue;
+    background: rgb(134, 117, 41);
 }
 
 input[type=reset]:active {
